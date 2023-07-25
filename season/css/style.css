@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Opti&display=swap');
+
+
+/* リセット部分 */
+*{
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  vertical-align: bottom; /* 画像と文章の余白をなくす */
+}
+
+/* 共通部分 */
+/* header部分 */
+header{
+  padding: 30px 0;
+}
+
+h1{
+  text-align: center;
+  font-family: 'Kaisei Opti', serif;
+  font-size: 55px;
+  letter-spacing: 0.55em;
+  color: #572A3F;
+}
+
+
+/* nav部分 */
+.g-nav{
+  width: 100%;
+  height: 50px;
+  background-color: #8B81C3;
+  margin-bottom: 80px;
+}
+
+.g-nav>ul{
+display: flex; /* 横並び */
+width: 960px;
+margin: 0 auto;
+}
+
+.g-nav li{
+  width: 20%; /* 5等分なので20％ */
+}
+
+.g-nav a{
+  display: block;
+  line-height: 50px; /* .g-navのheightが50pxなのでそろえる *//* 文字の垂直方向の位置 */
+  text-align: center;
+  color: #fff;
+  border-right: 1px solid #fff;
+}
+
+.g-nav li:first-of-type>a{ /* 〇:first-of-type 〇の複数あるものの一番最初の要素にだけ反映させる疑似セレクタ（liの一番最初のaに対しての命令） */
+  border-left: 1px solid #fff;
+}
+
+.g-nav a:hover{
+  background-color: #686190;
+}
+
+/* main部分 */
+main{
+  width: 960px;
+  margin: 0 auto 100px;
+}
+
+/* footer部分 */
+footer{
+  width: 100%;
+  height: 100px;
+  background-color: #8B81C3;
+}
+
+footer>p{
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+}
+/* 共通部分終わり */
+
+
+/* トップページ部分 */
+.main-visual{
+  margin-bottom: 70px;
+}
+
+.main-txt{
+  text-align: center;
+}
+
+.main-txt>h2{
+  margin-bottom: 25px;
+  letter-spacing: 0.2em;
+  color: #572A3F;
+}
+
+.main-txt>h2>span{
+  color: #8B81C3;
+  font-family: 'Kaisei Opti', serif;
+  font-size: 30px;
+  letter-spacing: 0.35em;
+}
+
+.main-txt p{
+  width: 600px;
+  line-height: 2.2;
+  margin: 0 auto;
+  font-family: "YuMincho","Yu Mincho",serif;
+  /* font-weight: bold; */
+}
+
+/* 季節ページ部分 */
+main.page{
+  display: flex;
+}
+
+.page-img{
+  margin-right: 40px;
+}
+
+.page-txt>h2{
+  margin-bottom: 16px;
+  letter-spacing: 0.25em;
+  color: #572A3F;
+}
+
+.page-txt>h2>span{
+  font-family: 'Kaisei Opti', serif;
+  font-size: 28px;
+  letter-spacing: 0.35em;
+}
+
+.page-txt>p{
+  line-height: 1.8;
+  font-family: "YuMincho","Yu Mincho",serif;
+}
+
+/* 個別ページ */
+#spring>.g-nav,#spring>footer{
+  background-color: #F596AA;
+}
+
+#spring>.g-nav a:hover{
+  background-color: #cb5770;
+}
+
+#spring .page-txt h2 span{
+  color: #f596aa;
+}
+
+#summer>.g-nav,#summer>footer{
+  background-color: #FFB11B;
+}
+
+#summer>.g-nav a:hover{
+  background-color: #f19f08;
+}
+
+#summer .page-txt h2 span{
+  color: #ffb11b;
+}
+
+#fall>.g-nav,#fall>footer{
+  background-color: #F75C2F;
+}
+
+#fall>.g-nav a:hover{
+  background-color: #d74921;
+}
+
+#fall .page-txt h2 span{
+  color: #f75c2f;
+}
+
+#winter>.g-nav,#winter>footer{
+  background-color: #51A8DD;
+}
+
+#winter>.g-nav a:hover{
+  background-color: #3d8dbf;
+}
+
+#winter .page-txt h2 span{
+  color: #51a8dd;
+}
